@@ -161,22 +161,22 @@ const HomePage = ({ setPage }) => {
   };
   return (
     <div>
-      <div style={{ padding: "80px 32px 60px", maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
+      <div style={{ padding: "52px 32px 40px", maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#fef3c7", border: "1px solid #fde68a", color: "#92400e", fontSize: 12, fontWeight: 700, padding: "6px 16px", borderRadius: 99, marginBottom: 28, letterSpacing: "0.05em" }}>✦ REALITNÍ PLATFORMA NOVÉ GENERACE</div>
         <h1 style={{ ...D, fontSize: "clamp(38px,5vw,72px)", fontWeight: 800, lineHeight: 1.05, margin: "0 0 24px", color: "#0f0f0f" }}>Kupujte a prodávejte<br /><span style={{ color: "#C9A84C" }}>chytřeji.</span></h1>
-        <p style={{ fontSize: 18, color: "#666", maxWidth: 540, margin: "0 auto 40px", lineHeight: 1.65 }}>AI ocenění, anonymizované nabídky a ochrana identity — až do uzavření rezervace.</p>
+        <p style={{ fontSize: 22, color: "#666", maxWidth: 640, margin: "0 auto 40px", lineHeight: 1.5, fontWeight: 500 }}>Poloviční provize&nbsp;&nbsp;|&nbsp;&nbsp;Prověření kupující&nbsp;&nbsp;|&nbsp;&nbsp;Absolutní transparentnost.</p>
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Btn onClick={() => setPage("register")}>Hledám nemovitost →</Btn>
-          <Btn variant="outline" onClick={() => setPage("register-seller")}>Chci prodat</Btn>
+          <Btn onClick={() => setPage("register-seller")}>Nabídnout nemovitost</Btn>
+          <Btn variant="outline" onClick={() => setPage("register")}>Hledám nemovitost</Btn>
         </div>
       </div>
 
-      <div style={{ background: "#f7f4ef", borderTop: "1px solid #ede9e3", borderBottom: "1px solid #ede9e3", padding: "40px 32px" }}>
+      <div style={{ background: "#f7f4ef", borderTop: "1px solid #ede9e3", borderBottom: "1px solid #ede9e3", padding: "28px 32px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
           {[
-            { icon: "💰", title: "O 50 % nižší provize", desc: "Ušetříte stovky tisíc oproti klasické realitní kanceláři. Transparentní cena předem." },
-            { icon: "📊", title: "Plná transparentnost", desc: "Vidíte každý krok — prohlídky, nabídky, zájemce. Žádné informace nezamlčujeme." },
-            { icon: "✅", title: "Jen seriózní zájemci", desc: "Kupující jsou preverifikováni a skórováni pomocí AI. Žádní turisté, jen reální kupci." },
+            { icon: "💰", title: "O 50 % nižší provize", desc: "Ušetříte stovky tisíc. Cena jasně daná předem." },
+            { icon: "📊", title: "Plná transparentnost", desc: "Máte přehled o každém kroku prodeje — od prohlídek po konkrétní nabídky." },
+            { icon: "✅", title: "Jen prověření kupující", desc: "Jednáte pouze s reálnými zájemci." },
           ].map(f => (
             <div key={f.title} style={{ textAlign: "center", padding: "24px 16px" }}>
               <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
@@ -224,7 +224,7 @@ const HomePage = ({ setPage }) => {
         </div>
       </div>
 
-      <div style={{ padding: "72px 32px", maxWidth: 1100, margin: "0 auto" }}>
+      <div style={{ padding: "48px 32px", maxWidth: 1100, margin: "0 auto" }}>
         <h2 style={{ ...D, fontSize: 36, fontWeight: 800, textAlign: "center", marginBottom: 48 }}>Jak VEBRE funguje</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
           {[{ n: "01", title: "Procházejte anonymně", desc: "Plná data o nemovitosti. Identity kupujících i prodávajících skryty — vidíte jen AI skóre.", icon: "👁️" }, { n: "02", title: "Nabídněte s AI asistencí", desc: "Podávejte nabídky podložené daty. AI navrhne částku, odhadne šanci na úspěch a poradí strategii.", icon: "✦" }, { n: "03", title: "Rezervace odhalí identitu", desc: "Zaplaťte rezervační poplatek 50 000 Kč převodem na účet. Okamžitě se odhalí obě identity.", icon: "🔓" }].map(s => (
@@ -238,7 +238,7 @@ const HomePage = ({ setPage }) => {
         </div>
       </div>
 
-      <div style={{ padding: "0 32px 72px", maxWidth: 1100, margin: "0 auto" }}>
+      <div style={{ padding: "0 32px 48px", maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 28 }}>
           <h2 style={{ ...D, fontSize: 28, fontWeight: 800 }}>Vybrané nemovitosti v Praze</h2>
           <Btn variant="outline" small onClick={() => setPage("listings")}>Zobrazit vše →</Btn>
@@ -248,7 +248,7 @@ const HomePage = ({ setPage }) => {
         </div>
       </div>
 
-      <div style={{ background: "#1a1a1a", padding: "64px 32px", textAlign: "center" }}>
+      <div style={{ background: "#1a1a1a", padding: "44px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ fontSize: 40, marginBottom: 20 }}>🔒</div>
           <h2 style={{ ...D, color: "#fff", fontSize: 36, fontWeight: 800, marginBottom: 16 }}>Identita chráněna<br /><span style={{ color: "#C9A84C" }}>až do rezervace</span></h2>
